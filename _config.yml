@@ -23,7 +23,7 @@ projects:
     - stars
   limit: 9
   exclude:
-    forks: true
+    forks: false
     projects:
     - netlob.app
     - lingo-online
