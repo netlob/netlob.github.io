@@ -29,6 +29,10 @@ projects:
     - lingo-online
     - roostersb
     - Peppels.js
+    - stuk
+    - requestify
+    - pew
+    - SpigotREST
 
 social_media:
   # behance: your_username
