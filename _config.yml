@@ -33,15 +33,15 @@ projects:
     - requestify
     - pew
     - SpigotREST
-    - P5-Pong
-    - kajmunk-stats
-    - gps
-    - Magiscord
-  include:
-    - mamorgen/magiscore
-    - magiscore
-    - simplyGits/MagisterJS
-    - MagisterJS
+  #   - P5-Pong
+  #   - kajmunk-stats
+  #   - gps
+  #   - Magiscord
+  # include:
+  #   - mamorgen/magiscore
+  #   - magiscore
+  #   - simplyGits/MagisterJS
+  #   - MagisterJS
 
 social_media:
   # behance: your_username
