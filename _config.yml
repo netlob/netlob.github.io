@@ -72,9 +72,9 @@ topics:
     web_url: https://github.com/topics/typescript
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/typescript/typescript.png
     
-  - name: jQuery
-    web_url: https://github.com/topics/jquery
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/jquery/jquery.png
+  - name: Magister
+    web_url: https://github.com/topics/magister
+    image_url: https://cdn.discordapp.com/attachments/445202655611191316/628282265834618901/angular.png
 
   - name: Angular
     web_url: https://github.com/topics/angular
