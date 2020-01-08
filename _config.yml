@@ -9,8 +9,7 @@ plugins:
 permalink: /:year/:month/:day/:title/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
@@ -25,10 +24,10 @@ projects:
   exclude:
     forks: false
     projects:
-    - netlob.app
-    - lingo-online
-    - roostersb
-    - Peppels.js
+      - netlob.dev
+      - lingo-online
+      - roostersb
+      - Peppels.js
 
 social_media:
   # behance: your_username
@@ -44,7 +43,7 @@ social_media:
   instagram: sjoerd_ismijnnaam
   # unsplash: your_username
   # vk: your_username
-  website: https://netlob.app
+  website: https://netlob.dev
 
 topics:
   - name: NodeJS
