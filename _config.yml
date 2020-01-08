@@ -24,10 +24,23 @@ projects:
   exclude:
     forks: false
     projects:
-      - netlob.dev
+      - netlob.app
       - lingo-online
       - roostersb
       - Peppels.js
+      - stuk
+      - requestify
+      - pew
+      - SpigotREST
+  #   - P5-Pong
+  #   - kajmunk-stats
+  #   - gps
+  #   - Magiscord
+  # include:
+  #   - mamorgen/magiscore
+  #   - magiscore
+  #   - simplyGits/MagisterJS
+  #   - MagisterJS
 
 social_media:
   # behance: your_username
@@ -40,7 +53,7 @@ social_media:
   # telegram: your_username
   twitter: netlob
   youtube: UCtFYDZCzHBmBLML1Lyvfcrw
-  instagram: sjoerd_ismijnnaam
+  instagram: sjoerd.netlob
   # unsplash: your_username
   # vk: your_username
   website: https://netlob.dev
@@ -50,22 +63,22 @@ topics:
     web_url: https://github.com/topics/nodejs
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/nodejs/nodejs.png
 
-  - name: JS
+  - name: JavaScript
     web_url: https://github.com/topics/javascript
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/javascript/javascript.png
+
+  - name: TypeScript
+    web_url: https://github.com/topics/typescript
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/typescript/typescript.png
+
+  - name: GraphQL
+    web_url: https://github.com/topics/GraphQL
+    image_url: https://raw.githubusercontent.com/github/explore/5c058a388828bb5fde0bcafd4bc867b5bb3f26f3/topics/graphql/graphql.png
 
   - name: Angular
     web_url: https://github.com/topics/angular
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/angular/angular.png
 
-  - name: jQuery
-    web_url: https://github.com/topics/jquery
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/jquery/jquery.png
-
-  - name: Git
-    web_url: https://github.com/topics/git
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/git/git.png
-
-  - name: Python
-    web_url: https://github.com/topics/python
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
+  - name: Vue
+    web_url: https://github.com/topics/vue
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/vue/vue.png
