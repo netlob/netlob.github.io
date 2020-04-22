@@ -1,17 +1,25 @@
 <template>
-  <div id="app">
-    <Background/>
-    <router-view/>
+  <div id="app" :class="{'has-background-black-ter': this.$root.$children[0].darkTheme}">
+    <Background />
+    <!-- <router-view/> -->
+    <Home />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Background from '@/components/Background.vue'
+import Home from '@/views/Home.vue'
 
 export default {
   components: {
-    Background
+    Background,
+    Home
+  },
+  data() {
+    return {
+      darkTheme: false
+    }
   }
 }
 </script>
@@ -93,5 +101,9 @@ body {
 ::selection {
   background-color: var(--navi-shape-red-color);
   color: white;
+}
+
+.has-text-grey-ter {
+  color: #4a4a4a;
 }
 </style>

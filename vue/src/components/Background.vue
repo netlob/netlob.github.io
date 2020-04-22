@@ -1,13 +1,15 @@
 <template>
-    <div id="background">
-        <span id="blue-circle-container"></span>
-        <span id="green-rectangle"></span>
-        <span id="grey-oval"></span>
-        <span id="grey-rounded-rectangle"></span>
-        <span id="red-triangle"></span>
-        <span id="yellow-dots"></span>
-        <span id="yellow-semicircle"></span>
-        <a class="icon-scroll" @click="scroll" :class="{'fade-hide': scrolled}"></a>
+    <div>
+      <div id="background" :class="{'has-background-black-ter': this.$root.$children[0].darkTheme}">
+          <span id="blue-circle-container"></span>
+          <span id="green-rectangle"></span>
+          <span id="grey-oval"></span>
+          <span id="grey-rounded-rectangle"></span>
+          <span id="red-triangle"></span>
+          <span id="yellow-dots"></span>
+          <span id="yellow-semicircle" @click="toggleTheme"></span>
+      </div>
+      <a class="icon-scroll" @click="scroll" :class="{'fade-hide': scrolled}"></a>
     </div>
 </template>
 
@@ -27,7 +29,10 @@ export default {
   },
   methods: {
     scroll: () => document.querySelector(".projects").scrollIntoView({ behavior: 'smooth', block: 'start'}),
-    handleScroll () { this.scrolled = (document.body.scrollTop > 20) }
+    handleScroll () { this.scrolled = (document.body.scrollTop > 20) },
+    toggleTheme() {
+      this.$root.$children[0].darkTheme = !this.$root.$children[0].darkTheme;
+    }
   }
 }
 </script>
@@ -36,8 +41,7 @@ export default {
 #background {
   height: 101vh;
   left: 50vw;
-  /* min-height: 700px;
-  min-width: 1024px; */
+  min-width: 624px;
   position: absolute;
   top: 50vh;
   transform: translate(-50vw, -50vh);
@@ -166,6 +170,7 @@ span {
   top: -50px;
   transform: rotate(-7deg);
   width: 211px;
+  cursor: pointer;
 }
 
 #green-rectangle {

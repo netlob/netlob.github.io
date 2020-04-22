@@ -1,7 +1,7 @@
 <template>
-    <footer class="footer has-background-white">
+    <footer class="footer" :class="{'has-background-black-ter': this.$root.$children[0].darkTheme}">
         <div class="content has-text-centered">
-            <p>
+            <p :class="{'has-text-white-ter': this.$root.$children[0].darkTheme}">
                 © Netlob {{ date }}
             </p>
         </div>
@@ -23,6 +23,5 @@ export default {
 .footer {
     position: relative;
     top: 100px;
-
 }
 </style>
