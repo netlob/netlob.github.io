@@ -1,5 +1,5 @@
 <template>
-    <div class="projects">
+    <div class="project">
         <div class="columns">
             <div class="column is-half" v-bind:class="{ reverse: !(index % 2 == 0) }">
                 <div class="columns svg-divider-container">
@@ -50,16 +50,20 @@ h2.title {
     width: 100px;
 }
 
+.project {
+    position: relative;
+}
+
 @media only screen and (min-width: 770px) {
     .reverse {
         order: 1;
     }
-    .projects > .columns {
-        margin-top: 50px;
+    .project > .columns {
+        margin-top: 100px;
     }
     .svg-divider {
         // display: none;
-        top: 30px;
+        margin-top: -45px;
         left: -3px;
         height: 42px;
         width: 10px;

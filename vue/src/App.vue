@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Background from '@/components/Background.vue'
 import Home from '@/views/Home.vue'
 
@@ -18,7 +17,7 @@ export default {
   },
   data() {
     return {
-      darkTheme: false
+      darkTheme: true
     }
   }
 }
@@ -98,10 +97,10 @@ body {
   margin: 0;
 }
 
-::selection {
-  background-color: var(--navi-shape-red-color);
-  color: white;
-}
+// ::selection {
+//   background-color: #7957d5;
+//   color: white;
+// }
 
 .has-text-grey-ter {
   color: #4a4a4a;

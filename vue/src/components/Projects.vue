@@ -4,6 +4,9 @@
             Projects
         </h2>
         <Project v-for="(project, index) in projects" :key="project.name" :project="project" :index="index" />
+        <h2 class="title is-3 has-text-centered mt-5"  :class="{'has-text-white': this.$root.$children[0].darkTheme}">
+            And many more (smaller) projects can be found on <a href="https://github.com/Netlob" target="blank">my GitHub</a>!
+        </h2>
     </section>
 </template>
 
@@ -37,7 +40,12 @@ export default {
 .is-0 {
     font-size: 4rem;
 }
+
 .container {
     padding: 20px;
+}
+
+.mt-5 {
+    margin-top: 100px;
 }
 </style>

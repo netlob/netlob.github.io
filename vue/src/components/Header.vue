@@ -3,14 +3,11 @@
         <div class="text-center title">
             <h1 :class="{'has-text-white': this.$root.$children[0].darkTheme}">netlob</h1>
             <!-- <span> -->
-            <div class="columns is-desktop is-centered">
-                <span class="column" v-html="status.status"></span>
-                <!-- <span> · </span> -->
-                <a class="column github" href="https://github.com/netlob"><span class="is-size-3" :class="{'has-text-white': this.$root.$children[0].darkTheme}">GitHub</span></a>
-                <!-- <span> · </span> -->
-                <!-- <span class="is-size-3 has-text-info">Discord</span> -->
-                <a class="column discord" href="https://discordapp.com/users/289849279600787457"><img class="is-inline" src="~@/assets/svg/discord.svg" alt=""></a>
-                <a class="column linkedin" href="https://www.linkedin.com/in/sjoerdbolten/" :class="{inverted: this.$root.$children[0].darkTheme}"><img class="is-inline" src="~@/assets/svg/linkedin.svg" alt=""></a>
+            <div class="columns is-8 is-desktop is-centered">
+                <span class="column status" v-html="status.status"></span>
+                <a class="column github" href="https://github.com/netlob" target="blank"><span class="is-size-3" :class="{'has-text-white': this.$root.$children[0].darkTheme}">GitHub</span></a>
+                <a class="column discord" href="https://discordapp.com/users/289849279600787457" target="blank"><img class="is-inline" src="~@/assets/svg/discord.svg" alt=""></a>
+                <a class="column linkedin" href="https://www.linkedin.com/in/sjoerdbolten/" target="blank" :class="{inverted: this.$root.$children[0].darkTheme}"><img class="is-inline" src="~@/assets/svg/linkedin.svg" alt=""></a>
             </div>
             <!-- </span> -->
         </div>
@@ -114,9 +111,30 @@
     .title > h1 {
         font-size: 12vh;
     }
-    .title > .columns {
-        bottom: -40vh;
-        left: 10px;
+
+    .columns .column {
+        position: relative;
+        margin-top: 10px;
+        top: 10px;
+    }
+
+    .discord {
+        top: -3px !important;
+        left: 2px !important;
+    }
+
+    .status {
+        left: 5px !important;
+    }
+
+    .github {
+        left: 2px !important;
+    }
+
+    .linkedin {
+        top: -18px !important;
+        left: 5px !important;
+        zoom: .7 !important;
     }
 }
 
@@ -134,8 +152,8 @@
     }
 
     .title > .columns {
-        bottom: -45vh;
         left: 10px;
+        bottom: -50vh !important;
     }
 }
 </style>
