@@ -4,7 +4,7 @@
             <h2 class="title is-1">
               {{ project.name }}
             </h2>
-            <h2 class="subtitle is-4" v-html="project.content"></h2>
+            <h2 class="subtitle is-4 is-font-regular" v-html="project.content"></h2>
             <!-- <a style=\"zoom:.25;top:80px;position:relative;\" href=\"https://play.google.com/store/apps/details?id=app.netlob.magiscore&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1\"><img alt=\"Get it on Google Play\" src=\"https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png\"/></a> -->
             <div>
                 <span class="is-inline subtitle is-5">Tags:   </span>
@@ -40,13 +40,19 @@ export default {
 h2.title {
     font-weight: bold;
 }
-.subtitle {
-    font-weight: normal;
-}
-.reverse {
-    order: 1;
+@media only screen and (min-width: 700px) {
+    .reverse {
+        order: 1;
+    }   
 }
 .columns {
     margin-top: 50px;
+}
+</style>
+
+<style lang="scss">
+.is-font-regular * {
+    font-weight: normal;
+    font-family: "AvertaStd-Regular", sans-serif !important;
 }
 </style>

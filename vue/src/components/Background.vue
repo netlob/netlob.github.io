@@ -16,7 +16,7 @@ export default {
   name: 'Header',
   components: {},
   methods: {
-    scroll: () => document.querySelector(".projects").scrollIntoView({ behavior: 'smooth', block: 'end'})
+    scroll: () => document.querySelector(".projects").scrollIntoView({ behavior: 'smooth', block: 'start'})
   }
 }
 </script>

@@ -28,6 +28,11 @@ export default {
   url("~@/assets/fonts/AvertaStd-Bold/447315c0c330fd423c8e1cc18024669d.svg#AvertaStd-Bold") format("svg");
 }
 
+@font-face {
+  font-family: "AvertaStd-Regular";
+  src: url("~@/assets/fonts/AvertaStd-Bold/447315c0c330fd423c8e1cc1802799d.otf") format("opentype");
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
