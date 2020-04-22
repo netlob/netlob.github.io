@@ -89,10 +89,6 @@
     zoom: .85;
 }
 
-.inverted {
-    filter: invert(1);
-}
-
 .github {
     position: relative;
     top: 8px;
@@ -141,5 +137,11 @@
         bottom: -45vh;
         left: 10px;
     }
+}
+</style>
+
+<style lang="scss">
+.inverted {
+    filter: invert(1);
 }
 </style>

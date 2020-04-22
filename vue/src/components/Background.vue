@@ -9,7 +9,7 @@
           <span id="yellow-dots"></span>
           <span id="yellow-semicircle" @click="toggleTheme"></span>
       </div>
-      <a class="icon-scroll" @click="scroll" :class="{'fade-hide': scrolled}"></a>
+      <a class="icon-scroll" @click="scroll" :class="{'fade-hide': scrolled, inverted: this.$root.$children[0].darkTheme}"></a>
     </div>
 </template>
 
