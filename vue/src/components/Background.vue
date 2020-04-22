@@ -7,16 +7,27 @@
         <span id="red-triangle"></span>
         <span id="yellow-dots"></span>
         <span id="yellow-semicircle"></span>
-        <a class="icon-scroll" @click="scroll"></a>
+        <a class="icon-scroll" @click="scroll" :class="{'fade-hide': scrolled}"></a>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
   components: {},
+  data() {
+    return {
+      scrolled: false
+    }
+  },
+  created() {
+    document.body.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    document.body.removeEventListener('scroll', this.handleScroll);
+  },
   methods: {
-    scroll: () => document.querySelector(".projects").scrollIntoView({ behavior: 'smooth', block: 'start'})
+    scroll: () => document.querySelector(".projects").scrollIntoView({ behavior: 'smooth', block: 'start'}),
+    handleScroll () { this.scrolled = (document.body.scrollTop > 20) }
   }
 }
 </script>
@@ -204,6 +215,11 @@ span {
   border-radius: 25px;
   cursor: pointer;
   z-index: 1000;
+  transition: opacity 500ms ease-out;
+}
+
+.fade-hide {
+  opacity: 0;
 }
 
 .icon-scroll:before {

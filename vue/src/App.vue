@@ -73,6 +73,10 @@ export default {
   --navi-wallpaper-text-color: rgb(232, 234, 237);
 }
 
+html {
+  overflow: hidden;
+}
+
 html,
 body {
   /* background-color: #573EBC; */

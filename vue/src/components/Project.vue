@@ -55,4 +55,7 @@ h2.title {
     font-weight: normal;
     font-family: "AvertaStd-Regular", sans-serif !important;
 }
+.is-font-bold * {
+    font-family: "AvertaStd-Bold", sans-serif !important;
+}
 </style>
