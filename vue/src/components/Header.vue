@@ -46,4 +46,16 @@ h1.title>span {
     width: 100vw;
     //   display: none;
 }
+
+@media only screen and (max-width: 800px) {
+  h1.title {
+    font-size: 12vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1.title {
+    font-size: 9vh;
+  }
+}
 </style>

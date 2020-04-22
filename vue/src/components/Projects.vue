@@ -37,4 +37,7 @@ export default {
 .is-0 {
     font-size: 4rem;
 }
+.container {
+    padding: 20px;
+}
 </style>

@@ -1,22 +1,27 @@
 <template>
-    <div class="columns">
-        <div class="column is-half" v-bind:class="{ reverse: !odd }">
-            <h2 class="title is-1">
-              {{ project.name }}
-            </h2>
-            <h2 class="subtitle is-4 is-font-regular" v-html="project.content"></h2>
-            <!-- <a style=\"zoom:.25;top:80px;position:relative;\" href=\"https://play.google.com/store/apps/details?id=app.netlob.magiscore&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1\"><img alt=\"Get it on Google Play\" src=\"https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png\"/></a> -->
-            <div>
-                <span class="is-inline subtitle is-5">Tags:   </span>
-                <div class="tags are-medium is-inline">
-                    <span class="tag is-link " v-for="tag in project.tags" :key="tag">
-                        {{ tag }}
-                    </span>
+    <div>
+        <div class="columns">
+            <img class="column is-centered svg-divider" src="~@/assets/svg/wavy_line.svg" alt="">
+        </div>
+        <div class="columns">
+            <div class="column is-half" v-bind:class="{ reverse: !odd }">
+                <h2 class="title is-1">
+                {{ project.name }}
+                </h2>
+                <h2 class="subtitle is-4 is-font-regular" v-html="project.content"></h2>
+                <!-- <a style=\"zoom:.25;top:80px;position:relative;\" href=\"https://play.google.com/store/apps/details?id=app.netlob.magiscore&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1\"><img alt=\"Get it on Google Play\" src=\"https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png\"/></a> -->
+                <div>
+                    <span class="is-inline subtitle is-5">Tags:   </span>
+                    <div class="tags are-medium is-inline">
+                        <span class="tag is-link " v-for="tag in project.tags" :key="tag">
+                            {{ tag }}
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="column is-half">
-            <img :src="project.image" />
+            <div class="column is-half">
+                <img :src="project.image" />
+            </div>
         </div>
     </div>
 </template>
@@ -40,13 +45,16 @@ export default {
 h2.title {
     font-weight: bold;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 770px) {
     .reverse {
         order: 1;
-    }   
-}
-.columns {
-    margin-top: 50px;
+    }
+    .columns {
+        margin-top: 50px;
+    }
+    .svg-divider {
+        display: none;
+    }
 }
 </style>
 
