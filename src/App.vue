@@ -17,7 +17,15 @@ export default {
   },
   data() {
     return {
-      darkTheme: true
+      darkTheme: this.getTheme()
+    }
+  },
+  methods: {
+    getTheme() {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          this.darkTheme = e.matches;
+      });
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
   }
 }

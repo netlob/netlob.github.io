@@ -2,11 +2,12 @@
     <div>
         <div class="text-center title">
             <h1 :class="{'has-text-white': this.$root.$children[0].darkTheme}">netlob</h1>
+            <h2 :class="{'has-text-white': this.$root.$children[0].darkTheme}">Sjoerd Bolten</h2>
             <!-- <span> -->
             <div class="columns is-8 is-desktop is-centered">
                 <span class="column status" v-html="status.status"></span>
                 <a class="column github" href="https://github.com/netlob" target="blank"><span class="is-size-3" :class="{'has-text-white': this.$root.$children[0].darkTheme}">GitHub</span></a>
-                <a class="column discord" href="https://discordapp.com/users/289849279600787457" target="blank"><img class="is-inline" src="~@/assets/svg/discord.svg" alt=""></a>
+                <a class="column discord" @click="discordPopup" target="blank"><img class="is-inline" src="~@/assets/svg/discord.svg" alt=""></a>
                 <a class="column linkedin" href="https://www.linkedin.com/in/sjoerdbolten/" target="blank" :class="{inverted: this.$root.$children[0].darkTheme}"><img class="is-inline" src="~@/assets/svg/linkedin.svg" alt=""></a>
             </div>
             <!-- </span> -->
@@ -27,6 +28,9 @@
             fetch("https://api.jsonbin.io/b/5ea08db3435f5604bb462665/latest")
                 .then(_ => _.json())
                 .then(_ => this.status = _)
+        },
+        discordPopup() {
+            alert("Add me on Discord: Netlob#1300 :)");
         }
     },
     mounted() {

@@ -1,7 +1,7 @@
 <template>
     <section class="container">
         <h2 class="title is-0 has-text-centered"  :class="{'has-text-white': this.$root.$children[0].darkTheme}">
-            Projects
+            Portfolio
         </h2>
         <Project v-for="(project, index) in projects" :key="project.name" :project="project" :index="index" />
         <h2 class="title is-3 has-text-centered mt-5"  :class="{'has-text-white': this.$root.$children[0].darkTheme}">
