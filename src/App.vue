@@ -25,6 +25,13 @@ export default {
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
           this.darkTheme = e.matches;
       });
+      
+      document.documentElement.className =
+          window.matchMedia && 
+          window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'has-background-black-ter'
+          : '';
+
       return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
   }

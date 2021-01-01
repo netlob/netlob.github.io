@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="text-center title">
-            <h1 :class="{'has-text-white': this.$root.$children[0].darkTheme}">netlob</h1>
-            <h2 :class="{'has-text-white': this.$root.$children[0].darkTheme}">Sjoerd Bolten</h2>
+            <h1 :class="{'has-text-white': this.$root.$children[0].darkTheme}">Sjoerd Bolten</h1>
+            <h2 :class="{'has-text-white': this.$root.$children[0].darkTheme}">aka Netlob</h2>
             <!-- <span> -->
             <div class="columns is-8 is-desktop is-centered">
                 <span class="column status" v-html="status.status"></span>
@@ -53,7 +53,7 @@
     color: var(--navi-shape-red-color);
     color: #573ebc;
     font-weight: 800;
-    font-size: 18vh;
+    font-size: 12vh;
 }
 
 .title > .columns {
