@@ -9,6 +9,7 @@
   "dependencies": {
     "buefy": "^0.8.20",
     "vue": "^2.6.12",
+    "vue-gtag": "^1.11.0",
     "vue-router": "^3.4.9"
   },
   "devDependencies": {
