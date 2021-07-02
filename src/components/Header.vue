@@ -25,7 +25,7 @@
     },
     methods: {
         fetchStatus() {
-            fetch("https://api.jsonbin.io/b/5ea08db3435f5604bb462665/latest")
+            fetch("https://sjoerd.dev/html/status")
                 .then(_ => _.json())
                 .then(_ => this.status = _)
         },

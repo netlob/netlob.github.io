@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         fetchData() {
-            fetch("https://api.jsonbin.io/b/5e9f94202940c704e1dc5f72/latest")
+            fetch("https://sjoerd.dev/html/projects")
                 .then(_ => _.json())
                 .then(_ => this.projects = _)
         }
